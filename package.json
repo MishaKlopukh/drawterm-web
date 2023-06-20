@@ -1,0 +1,14 @@
+{
+  "name": "drawterm-web",
+  "version": "0.1.0",
+  "description": "Plan9 Drawterm in the browser",
+  "main": "server/server.js",
+  "scripts": {
+    "serve": "node server/server.js"
+  },
+  "author": "Misha",
+  "license": "LGPL-3.0",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

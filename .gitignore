@@ -2,3 +2,4 @@
 *.a
 dist/js/lib.js
 dist/js/lib.wasm
+node_modules
