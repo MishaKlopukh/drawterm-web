@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+canvas {
+    margin: 0;
+    display: none;
+}
+#thegrey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: #777777;
+}
+* {
+    font-size: 20pt;
+    font-family: sans-serif;
+}
+#loading {
+    border: 4px solid #55aaaa;
+    background: white;
+    padding: 1cm;
+    display: flex;
+    flex-direction: column;
+}
+#loading > div {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#loading span { font-size: 24pt; }
+#login {
+    border: 4px solid #55aaaa;
+    background: white;
+    padding: 1cm;
+    display: none;
+}
+#login input {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+#error {
+    display: none;
+}

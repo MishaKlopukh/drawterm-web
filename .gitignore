@@ -1,4 +1,4 @@
 *.o
 *.a
-blob.js
-blob.wasm
+dist/js/lib.js
+dist/js/lib.wasm
