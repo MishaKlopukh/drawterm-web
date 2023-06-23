@@ -252,6 +252,8 @@ function rcpu(failure) {
 	});
 }
 
+var user, password, auth_url, rcpu_url;
+
 function main() {
 	if(user === undefined || user === null || password === undefined || password === null){
 		document.getElementById('loading').style.display = 'none';
@@ -267,6 +269,16 @@ function main() {
 
 function go(no_ui) {
 	if(!no_ui){
+		cpu_host = document.getElementById('cpu_host').value;
+		cpu_port = document.getElementById('cpu_port').value;
+		rcpu_url = ((window.location.protocol === "https:") ? "wss://" : "ws://")
+					+ window.location.host + "/?token="
+					+ cpu_host + ":" + cpu_port;
+		auth_host = document.getElementById('auth_host').value;
+		auth_port = document.getElementById('auth_port').value;
+		auth_url = ((window.location.protocol === "https:") ? "wss://" : "ws://")
+					+ window.location.host + "/?token="
+					+ auth_host + ":" + auth_port;
 		user = document.getElementById('user').value;
 		password = document.getElementById('password').value;
 	}

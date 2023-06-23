@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <title>drawterm</title>
-<script src="js/config.js" type="text/javascript"></script>
 <script src="js/lib.js" type="text/javascript"></script>
 <script src="js/aux.js" type="text/javascript"></script>
 <script src="js/rcpu.js" type="text/javascript"></script>
@@ -22,8 +21,24 @@
 </div>
 <form id="login" onsubmit="go(); return false">
 <span id="error"></span>
+<div>
+<label for="cpu_host">CPU Server:</label>
+<input type="text" id="cpu_host" placeholder="CPU Host">
+<input type="number" id="cpu_port" value="17019" width="5em">
+</div>
+<div>
+<label for="auth_host">Auth Server:</label>
+<input type="text" id="auth_host" placeholder="Auth Host">
+<input type="number" id="auth_port" value="567" width="5em">
+</div>
+<div>
+<label for="user">user:</label>
 <input type="text" id="user" placeholder="User name">
+</div>
+<div>
+<label for="password">password:</label>
 <input type="password" id="password" placeholder="Password">
+</div>
 <input type="submit" value="Connect">
 </form>
 </div>
